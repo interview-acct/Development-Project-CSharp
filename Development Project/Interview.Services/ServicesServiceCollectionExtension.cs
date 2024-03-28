@@ -8,7 +8,6 @@ namespace Interview.Services
     {
         public static IServiceCollection AddServiceServices(this IServiceCollection services)
         {
-            //services.AddTransient<IActionDescriptorCollectionProvider, ActionDescriptorCollectionProvider>();
             services.AddTransient<EndpointEnumerationService>();
 
             return services;

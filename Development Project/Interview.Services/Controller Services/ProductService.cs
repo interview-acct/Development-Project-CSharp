@@ -16,6 +16,7 @@ namespace Interview.Services.Controller_Services
 
         private readonly ProductDbContext _productDbContext;
         private readonly TransactionDbContext _transactionDbContext;
+        //EVAL: would ordinarily have configured a logging provider and injected throughout; provider would route to appinsights & other required outputs
         private ILogger _logger { get; set; }
 
         public ProductService(IServiceProvider services)
