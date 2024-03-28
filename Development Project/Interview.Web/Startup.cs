@@ -1,13 +1,17 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using Interview.Database;
+using Interview.Mapper;
+using Interview.Models.App_Layer.Requests;
+using Interview.Services;
+using Interview.Web.Validators;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
 
 namespace Interview.Web
 {
@@ -23,6 +27,17 @@ namespace Interview.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDatabaseServices(Configuration.GetSection("DatabaseConfiguration"));
+            
+            services.AddMapperServices();
+
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+            services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+            services.AddValidatorsFromAssemblyContaining<ProductGetRequest>();
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+
+            services.AddServiceServices();
+
             services.AddControllers();
         }
 

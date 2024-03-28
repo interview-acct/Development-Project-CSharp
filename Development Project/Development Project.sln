@@ -11,6 +11,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparcpoint.Core", "Sparcpoi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sparcpoint.SqlServer.Abstractions", "Sparcpoint.SqlServer.Abstractions\Sparcpoint.SqlServer.Abstractions.csproj", "{4E72CD4A-C9FE-4A04-9F07-A770E3AD7297}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interview.Database", "Interview.Database\Interview.Database.csproj", "{4D8AF355-DD28-4B65-90B8-383C13425BC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview.Mapper", "Interview.Mapper\Interview.Mapper.csproj", "{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview.Models", "Interview.Models\Interview.Models.csproj", "{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview.Services", "Interview.Services\Interview.Services.csproj", "{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +63,38 @@ Global
 		{4E72CD4A-C9FE-4A04-9F07-A770E3AD7297}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4E72CD4A-C9FE-4A04-9F07-A770E3AD7297}.Release|x86.ActiveCfg = Release|Any CPU
 		{4E72CD4A-C9FE-4A04-9F07-A770E3AD7297}.Release|x86.Build.0 = Release|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Debug|x86.Build.0 = Debug|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D8AF355-DD28-4B65-90B8-383C13425BC5}.Release|x86.Build.0 = Release|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Debug|x86.Build.0 = Debug|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Release|x86.ActiveCfg = Release|Any CPU
+		{2FA7EFB1-45FD-47E4-8F92-06D9D7CF5F82}.Release|x86.Build.0 = Release|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Debug|x86.Build.0 = Debug|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Release|x86.ActiveCfg = Release|Any CPU
+		{29EA26D8-C404-4BBB-B2C1-DBFD03E1B39C}.Release|x86.Build.0 = Release|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Debug|x86.Build.0 = Debug|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Release|x86.ActiveCfg = Release|Any CPU
+		{07CC51AB-AE92-4775-AFC0-70B0FC9605B5}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
